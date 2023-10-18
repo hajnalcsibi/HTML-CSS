@@ -1,0 +1,105 @@
+<!DOCTYPEhtml>
+<html>
+  <head>
+    <title>Buttons</title>
+    <style>body{height:100%;
+      background:#f2d5b8;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+      }
+      
+      div{display:flex;
+      flex-direction:column;
+      }
+      
+      button{
+        width:200px;
+        height:50px;
+        margin:5px;
+        background:none;
+        border:3px solid;
+        font-size:20px;
+        text-transform:uppercase;
+        font-weight:500;
+        box-shadow:2px 3px 0 0 #af5f0f;
+      }
+      
+      .b1{color:#8f11d3;
+      }
+      
+      .b1:hover{color:#c474ef;
+      animation: halftone 1s alternate;}
+      
+      @keyframes halftone {
+       0% {
+              transform: rotate(180deg) ;
+          }
+      }
+      
+      .b2{color:#c2f983;}
+      .b2:hover{background:#6fa138;
+      animation:pulse 1s infinite;}
+      
+      @keyframes pulse {
+          from {
+              transform : scale(1);
+              opacity   : 1;
+          }
+          50% {
+              transform : scale(0.75);
+              opacity   : 0.25;
+          }
+          to {
+              transform : scale(1);
+              opacity   : 1;
+          }
+      }
+      
+      .b3{color:#fb0992;}
+      .b3:hover{color:#ef5fb1;
+      animation:shake 1s infinite;}
+      
+      @keyframes shake{from {
+              transform : translatex(0px);
+        }
+        10%{transform:translatex(10px);}
+        20%{transform:translatex(-10px);}
+        30%{transform:translatex(10px);}
+        40%{transform:translatex(-10px);}
+        50%{transform:translatex(10px);}
+        60%{transform:translatex(-10px);}
+        70%{transform:translatex(10px);}
+        80%{transform:translatex(-10px);}
+        90%{transform:translatex(10px);}
+        to {
+              transform : translatex(0px);
+          }}
+      
+      .b4{color:#00fbda;
+      }
+      .b4:hover{
+      animation:flicker 1s infinite;}
+      
+      @keyframes flicker{
+        0%{opacity:0;}
+        10%{opacity:100;}
+        20%{opacity:30;}
+        50%{opacity:100;}
+        70%{opacity:50}
+        100%{opacity:0;}
+        
+        
+      }
+        </style>
+  </head>
+  <body>
+    <div>
+      <button class="button b1">Hover Me</button>
+      <button class="button b2">Hover Me</button>
+      <button class="button b3">Hover Me</button>
+      <button class="button b4">Hover Me</button>
+    </div>
+  </body>
+</html>
